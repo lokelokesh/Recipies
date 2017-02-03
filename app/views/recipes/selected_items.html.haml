@@ -1,0 +1,41 @@
+-# in app/views/recipes/edit.html.haml
+
+= "Apples: #{@recipes.collect(&:apple).sum rescue 0} "
+%br
+= "Beet: #{@recipes.collect(&:beet).sum rescue 0} "
+%br
+= "Carrot: #{@recipes.collect(&:carrot).sum rescue 0} "
+%br
+= "Collard Green (bunch): #{@recipes.collect(&:collardgreen).sum rescue 0} "
+%br
+= "Cucumber: #{@recipes.collect(&:cucumber).sum rescue 0} "
+%br
+= "Ginger (in): #{@recipes.collect(&:ginger).sum rescue 0} "
+%br
+= "Grapefruit: #{@recipes.collect(&:grapefruit).sum rescue 0} "
+%br
+= "Lemon: #{@recipes.collect(&:lemon).sum rescue 0} "
+%br
+= "Lime: #{@recipes.collect(&:lime).sum rescue 0} "
+%br
+= "Mint (handful): #{@recipes.collect(&:mint).sum rescue 0} "
+%br
+= "Orange: #{@recipes.collect(&:orange).sum rescue 0} "
+%br
+= "Pear: #{@recipes.collect(&:pear).sum rescue 0} "
+%br
+= "Pumpkin Pie Spice (tsp): #{@recipes.collect(&:pumpkinpiespice).sum rescue 0} "
+%br
+= "Romaine: #{@recipes.collect(&:romaine).sum rescue 0} "
+%br
+= "Spinach: #{@recipes.collect(&:spinach).sum rescue 0} "
+%br
+= "Sweet Potato: #{@recipes.collect(&:sweetpotato).sum rescue 0} "
+%br
+= "Swiss Chard: #{@recipes.collect(&:swisschard).sum rescue 0} "
+%br
+= "Tumeric Powder (tsp): #{@recipes.collect(&:tumericpowder).sum rescue 0} "
+
+%br
+= link_to 'Back to recipe list', recipes_path
+
